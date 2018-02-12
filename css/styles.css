@@ -1,0 +1,515 @@
+/* General */
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: "Myriad Pro Regular";
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: #737070;
+    font-size: 25px;
+    font-family: "Myriad Pro Regular";
+}
+
+a {
+    color: white;
+    font-family: "Myriad Pro Regular";
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: tomato;
+}
+
+.header-main-img,
+.second-scr-main-img {
+    width: 252px;
+    margin: 0 auto;
+}
+
+
+
+/* Header */
+
+.header {
+    background: url('../img/header_bg.jpg') no-repeat;
+    background-size: cover;
+    padding: 40px 1% 90px;
+}
+
+.logo-navbar-wrap {
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo-img {
+    width: 56px;
+}
+
+.logo-title {
+    font-size: 37px;
+    font-family: "Myriad Pro Bold";
+    color: white;
+    margin-left: 6px;
+    position: relative;
+    top: -3px;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar-item {
+    color: white;
+    font-size: 21px;
+    font-family: "Myriad Pro Semibold";
+    line-height: 42px;
+}
+
+.navbar-item+a {
+    margin-left: 40px;
+}
+
+.navbar-item:last-child {
+    border: 2px solid white;
+    padding: 8px 20px 7px;
+}
+
+.navbar-item:last-child:hover {
+    border: 2px solid tomato;
+    transition: color 0.3s ease;
+}
+
+.header h2 {
+    margin-top: 100px;
+    margin-bottom: 34px;
+}
+
+.header-main-img img {
+    width: 100%;
+}
+
+.mobile-hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-hamburger {
+        display: inline-block;
+        position: absolute;
+        top: -40px;
+        right: 70px;
+    }
+
+    .header h2 {
+        margin-top: 70px;
+    }
+
+    .header {
+        padding-bottom: 60px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+
+/* Mobile hamburger */
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+}
+
+
+
+/* A hamburger */
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+
+/* Transform all the slices of hamburger into a crossmark. */
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #347d4d;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -60px 0 0 -140px;
+    padding: 35px;
+    padding-top: 75px;
+
+    background: #2b342b;
+    list-style-type: none;
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+
+/* Second screen */
+
+.second-scr-sect {
+    padding: 120px 1%;
+}
+
+.second-scr-sect h2 {
+    color: #4e4e4e;
+    margin-bottom: 18px;
+}
+
+.second-scr-sect h2+p {
+    margin-bottom: 11px;
+}
+
+.second-scr-main-img {
+    margin-top: 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .second-scr-sect {
+        padding: 50px 3%;
+    }
+}
+
+
+
+/* Third screen */
+
+.third-scr-sect {
+    padding: 100px 1% 110px;
+    background-color: #2b342b;
+}
+
+.third-scr-sect p {
+    color: white;
+    margin-top: 26px;
+    margin-bottom: 47px;
+}
+
+.third-scr-main-img {
+    width: 279px;
+    height: 230px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../img/third-scr-main-img.png');
+    background-size: cover;
+}
+
+.calories,
+.fat,
+.water,
+.protein {
+    position: absolute;
+}
+
+.calories {
+    width: 205px;
+    right: 85%;
+    top: 42%;
+}
+
+.fat {
+    width: 198px;
+    right: 49%;
+    top: 81%;
+}
+
+.water {
+    width: 181px;
+    left: 73%;
+    top: 56%;
+}
+
+.protein {
+    width: 214px;
+    left: 83%;
+    top: 9%;
+}
+
+@media screen and (max-width: 680px) {
+    .third-scr-main-img {
+        width: 140px;
+        height: 115px;
+    }
+
+    .fat {
+        top: 76%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .third-scr-sect {
+        padding: 80px 3%;
+    }
+
+    .protein {
+        width: 110px;
+    }
+
+    .water {
+        width: 99px;
+    }
+
+    .calories {
+        width: 104px;
+    }
+
+    .fat {
+        width: 100px;
+    }
+}
+
+
+
+/* Section "Plans" */
+
+.plans {
+    background-color: #e9ede9;
+    padding: 115px 1% 110px;
+}
+
+.plans h2 {
+    color: #4e4e4e;
+    margin-bottom: 18px;
+}
+
+.plans h2+p {
+    margin-bottom: 11px;
+}
+
+.plans-block {
+    font-size: 0;
+    margin-top: 95px;
+    text-align: center;
+}
+
+.plans-item {
+    min-width: 260px;
+    width: 31.23%;
+    margin: 1.05%;
+    padding-top: 34px;
+    padding-bottom: 41px;
+    background-color: #d3cfcf;
+    display: inline-block;
+}
+
+.plans-item-title {
+    font-size: 33px;
+    color: #7d7b7b;
+    font-weight: bold;
+    margin-bottom: 51px;
+}
+
+.plans-item-title span {
+    color: #afacac;
+    font-weight: normal;
+}
+
+.plans-item-subtitle {
+    font-size: 32px;
+    color: #4e4e4e;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 32px;
+    color: #b38e48;
+    margin-bottom: 39px;
+}
+
+.plans-button {
+    width: 113px;
+    height: 37px;
+    background-color: #71ae5a;
+    border-radius: 13px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plans-button-link {
+    font-size: 16px;
+    line-height: 38px;
+    font-family: "Myriad Pro Regular";
+}
+
+@media screen and (max-width: 768px) {
+    .plans {
+        padding: 80px 3%;
+    }
+
+    .plans-block {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .plans {
+        padding: 40px 3%;
+    }
+}
+
+
+
+/* Footer */
+
+.footer {
+    padding: 90px 1%;
+    background-color: #e9ede9;
+}
+
+a+.footer-navbar-item {
+    margin-left: 35px;
+}
+
+.footer-navbar-item {
+    color: #747373;
+    font-size: 18px;
+    font-family: "Myriad Pro Bold";
+}
+
+.navbar-cprght-block {
+    display: inline-block;
+}
+
+.copyright {
+    margin-top: 16px;
+    color: #747373;
+    font-size: 18px;
+    font-family: "Myriad Pro Regular";
+    text-align: left;
+}
+
+.scroll-button {
+    float: right;
+    width: 48px;
+    height: 48px;
+    background-color: #71ae5a;
+    border-radius: 50%;
+}
+
+.scroll-btn-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 14px 10px;
+    border-color: transparent transparent #ffffff transparent;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 3%;
+    }
+
+    .footer-navbar {
+        text-align: center;
+    }
+
+    .footer-navbar-item {
+        margin: 5px;
+        line-height: 50px;
+    }
+
+    a+.footer-navbar-item {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-navbar {
+        display: none;
+    }
+}
