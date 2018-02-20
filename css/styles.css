@@ -23,6 +23,12 @@ p {
     font-family: "Myriad Pro Regular";
 }
 
+span {
+    font-family: "Myriad Pro Regular";
+    font-size: 22px;
+    color: white;
+}
+
 a {
     color: white;
     font-family: "Myriad Pro Regular";
@@ -34,7 +40,7 @@ a:hover {
 }
 
 .header-main-img,
-.second-scr-main-img {
+.about-main-img {
     width: 252px;
     margin: 0 auto;
 }
@@ -239,25 +245,21 @@ a:hover {
 
 /* Second screen */
 
-.second-scr-sect {
+.about {
     padding: 120px 1%;
 }
 
-.second-scr-sect h2 {
+.about h2 {
     color: #4e4e4e;
     margin-bottom: 18px;
 }
 
-.second-scr-sect h2+p {
-    margin-bottom: 11px;
-}
-
-.second-scr-main-img {
+.about-main-img {
     margin-top: 75px;
 }
 
 @media screen and (max-width: 768px) {
-    .second-scr-sect {
+    .about {
         padding: 50px 3%;
     }
 }
@@ -266,18 +268,18 @@ a:hover {
 
 /* Third screen */
 
-.third-scr-sect {
+.infographics {
     padding: 100px 1% 110px;
     background-color: #2b342b;
 }
 
-.third-scr-sect p {
+.infographics p {
     color: white;
     margin-top: 26px;
     margin-bottom: 47px;
 }
 
-.third-scr-main-img {
+.infographics-main-img {
     width: 279px;
     height: 230px;
     margin: 0 auto;
@@ -317,19 +319,67 @@ a:hover {
     top: 9%;
 }
 
+.infographics-main-img span {
+    position: absolute;
+}
+
+.calories_txt {
+    top: 105px;
+    left: -164px;
+}
+
+.fat_txt {
+    bottom: 35px;
+    left: -57px;
+}
+
+.water_txt {
+    bottom: 90px;
+    right: -106px;
+}
+
+.protein_txt {
+    top: -1px;
+    right: -167px;
+}
+
 @media screen and (max-width: 680px) {
-    .third-scr-main-img {
+    .infographics-main-img {
         width: 140px;
         height: 115px;
     }
 
     .fat {
-        top: 76%;
+        top: 85%;
+    }
+
+    .infographics-main-img span {
+        font-size: 16px;
+    }
+
+    .calories_txt {
+        top: 53px;
+        left: -119px;
+    }
+
+    .fat_txt {
+        bottom: 11px;
+        left: -69px;
+    }
+
+    .water_txt {
+        bottom: 42px;
+        right: -102px;
+    }
+
+    .protein_txt {
+        top: -7px;
+        right: -118px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .third-scr-sect {
+    .infographics {
         padding: 80px 3%;
     }
 
@@ -347,6 +397,30 @@ a:hover {
 
     .fat {
         width: 100px;
+    }
+
+    .infographics-main-img span {
+        font-size: 13px;
+    }
+
+    .calories_txt {
+        top: 50px;
+        left: -85px;
+    }
+
+    .fat_txt {
+        bottom: 14px;
+        left: -29px;
+    }
+
+    .water_txt {
+        bottom: 45px;
+        right: -61px;
+    }
+
+    .protein_txt {
+        top: -5px;
+        right: -87px;
     }
 }
 
@@ -409,18 +483,16 @@ a:hover {
 }
 
 .plans-button {
+    display: block;
+    font-size: 16px;
+    line-height: 38px;
+    font-family: "Myriad Pro Regular";
     width: 113px;
     height: 37px;
     background-color: #71ae5a;
     border-radius: 13px;
     margin: 0 auto;
     text-align: center;
-}
-
-.plans-button-link {
-    font-size: 16px;
-    line-height: 38px;
-    font-family: "Myriad Pro Regular";
 }
 
 @media screen and (max-width: 768px) {
@@ -487,6 +559,10 @@ a+.footer-navbar-item {
     position: relative;
     top: 15px;
     left: 15px;
+}
+
+.scroll-btn-triangle:hover {
+    border-color: transparent transparent tomato transparent;
 }
 
 @media screen and (max-width: 768px) {
