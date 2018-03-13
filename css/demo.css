@@ -143,11 +143,11 @@ a:focus {
 	fill: currentColor;
 }
 
-.fab {
+.controls .fab {
 	color:  #484545;
 }
 
-.fab:hover {
+.controls .fab:hover {
 	color:  #fff;
 }
 
@@ -219,7 +219,7 @@ a:focus {
 	font-size: 1.85em;
 	flex: none;
 	width: 100%;
-	margin: 2em 0 0 auto;
+	margin: 0.5em 0 0 0;
 	text-align: right;
 }
 
@@ -227,6 +227,9 @@ a:focus {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
 }
 
 .menu__inner__right li {
@@ -255,10 +258,6 @@ a:focus {
 
 .menu__link {
 	display: inline-block;
-}
-
-.menu--code .menu__link:hover {
-	cursor: default;
 }
 
 .content__bottom {
@@ -383,6 +382,81 @@ a:focus {
 	color: #484545;
 }
 
+.white {
+	color: #fff;
+}
+
+.hidden_menu {
+	visibility: hidden; 
+	font-size: 1.85em; 
+	flex: none;
+	margin: 1em auto 0 0; 
+	text-align: left;
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+.visibility {
+	visibility: visible;
+}
+
+.portfolio-gallery {
+	width: calc(100% - 208px);
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 0;
+	text-align: left;
+}
+
+.portfolio-gallery__item {
+	display: inline-block;
+	font-size: 20px;
+	width:  31.33%;
+	height:  235px;
+	margin: 0 2% 2% 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.portfolio-gallery__item:first-child {
+	background-image: url('../img/item2.png');
+}
+
+.portfolio-gallery__item:nth-child(2) {
+	background-image: url('../img/item1.jpg');
+}
+
+.portfolio-gallery__item:nth-child(3) {
+	background-image: url('../img/item3.png');
+}
+
+.portfolio-gallery__item:nth-child(4) {
+	background-image: url('../img/item4.png');
+}
+
+.contacts_list {
+	list-style-type: none;
+	text-align: right;
+	display: none;
+	position: absolute;
+	right: 2.5em;
+	top: 17em;
+}
+
+.contacts_list li {
+	margin: 20px 0;
+}
+
+.contacts_list li a {
+	color: #c0c0c0;
+	margin-left: 5px;
+}
+
+.contacts_list li a:hover {
+	color: #fff;
+}
+
 @media screen and (max-height: 38.5em) {
 	.menu {
 		text-align: left;
@@ -401,5 +475,15 @@ a:focus {
 	}
 	.content__inner {
 		padding: 1em 1em 0;
+	}
+	.title {
+		left: 1em;
+		bottom: calc(6em + 5vh);
+		font-size: 0.85em;
+	}
+	.sub-title {
+		left: 1em;
+		bottom: calc(1em + 5vh);
+		font-size: 0.85em;
 	}
 }

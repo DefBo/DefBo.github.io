@@ -18,33 +18,50 @@
 	</head>
 	<body>
 		<main>
-			<div class="pieces" style="background-image: url(img/normal.jpg)" data-img-alt="url(img/alt.jpg)" data-img-code="url(img/code.jpg)"></div>
+			<div id="pieces" class="pieces" style="background-image: url(img/normal.jpg)" data-img-alt="url(img/alt.jpg)" data-img-code="url(img/code.jpg)"></div>
 			<div class="overlay overlay--hidden"></div>
 			<div class="content">
-				<div class="content__inner">
+				<div class="content__inner" style="position: relative">
 					<div class="content__top">
-						
-						<div class="logo">
+						<a href="http://andriiv.com/" id="logo_home" class="logo">
 							<i class="fas fa-chevron-left"></i>Andrii<span>v</span><i class="fas fa-chevron-right"></i>
-						</div>
+						</a>
 						<div class="controls">
-							<a href="https://www.facebook.com/bo.andriiv"><i class="fab fa-facebook fa-lg"></i></a>
-							<a href="https://www.instagram.com/majsterbo/"><i class="fab fa-instagram fa-lg"></i></a>
-							<a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+							<a target="_blank" href="https://www.facebook.com/bo.andriiv"><i class="fab fa-facebook fa-lg"></i></a>
+							<a target="_blank" href="https://www.instagram.com/majsterbo/"><i class="fab fa-instagram fa-lg"></i></a>
+							<a target="_blank" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
 							<button class="btn btn--menu mode mode--design" data-switch style="display: none">
 								<svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
 								<svg class="icon icon--menu-alt"><use xlink:href="#icon-menu-alt"></use></svg>
 							</button>
 						</div>
 					</div>
-					<div class="menu">
+					<div class="hidden_menu">
 						<ul class="menu__inner">
-							<li class="menu__item"><a class="menu__link" data-switch>Upwork profile</a></li>
-							<li class="menu__item"><a class="menu__link" data-switch>Portfolio</a></li>
-							<li class="menu__item"><a class="menu__link" data-switch>Contacts</a></li>
-							<!-- <li class="menu__item"><a class="menu__link" data-switch>Musings</a></li> -->
+							<li class="menu__item"><a id="gohome" class="menu__link" data-switch>go home</a></li>
 						</ul>
 					</div>
+					<div class="menu">
+
+						<div class="portfolio-gallery" style="display: none">
+							  <a class="portfolio-gallery__item"></a>
+							  <a class="portfolio-gallery__item"></a>
+							  <a class="portfolio-gallery__item"></a>
+							  <a class="portfolio-gallery__item"></a>
+						</div>
+
+						<ul class="menu__inner">
+							<li class="menu__item"><a class="menu__link" data-switch>Upwork profile</a></li>
+							<li class="menu__item"><a id="portfolio" class="menu__link" data-switch>Portfolio</a></li>
+							<li class="menu__item"><a id="contacts" class="menu__link" data-switch>Contacts</a></li>
+						</ul>
+					</div>
+					<ul class="contacts_list">
+						<li><i class="fas fa-phone fa-lg"></i> <a href="tel:+380980601234">+380 98 060 1234</a></li>
+						<li><i class="fas fa-at fa-lg"></i> <a href="mailto:bo.andriiv@gmail.com">bo.andriiv@gmail.com</a></li>
+						<li><i class="fab fa-skype fa-lg"></i> <a href="skype:buzzydang?chat">Bo Andriiv</a></li>
+						<li><i class="fab fa-telegram-plane fa-lg"></i> <a href="https://telegram.me/boandriiv">@boandriiv</a></li>
+					</ul>
 					<div class="menu menu--code" style="position: relative">
 						<ul class="menu__inner">
 							<li class="menu__item"><a class="menu__link" data-switch>Про мене</a></li>
@@ -56,19 +73,25 @@
 							<li class="menu__item"><a class="menu__link" data-switch>Портфоліо</a></li>
 						</ul>
 					</div>
-					<div class="content__bottom">
-						<div class="switch mode mode--design">
-							<a class="switch__item switch__item--current">home</a>
-							<a class="switch__item"><span class="mode mode--design" data-switch data-glitch>about me</span></a>
-						</div>
-						<div class="link-wrap">
-							<a class="contact-link mode mode--design" data-switch data-glitch>Work with me</a>
-						</div>
-					</div>
 					<h2 class="title">
 						<span class="title__inner mode mode--design" data-switch data-glitch>Bogdan Andriiv</span>
 					</h2>
 					<h2 class="sub-title">​<span class="part1">Front-end web developer</span><br><span class="part2">you were looking for</span></h2>
+					<div class="content__bottom">
+						<div id="way1" class="switch mode mode--design">
+							<a id="home1" class="switch__item switch__item--current">home</a>
+							<a class="switch__item" id="about_me"><span class="mode mode--design" data-switch data-glitch>about me</span></a>
+						</div>
+
+						<div id="way2" class="switch" style="display: none;">
+							<a id="home_link" class="switch__item"><span class="mode mode--design" data-switch data-glitch>home</span></a>
+							<a class="switch__item switch__item--current">portfolio</a>
+						</div>
+
+						<div class="link-wrap">
+							<a class="contact-link mode mode--design" data-switch data-glitch>Work with me</a>
+						</div>
+					</div>
 				</div><!-- /content__inner-->
 			</div><!-- /content -->
 			<div class="loading"></div>
@@ -76,7 +99,8 @@
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="js/charming.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</body>
 </html>
