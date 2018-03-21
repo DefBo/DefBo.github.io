@@ -470,15 +470,7 @@ a:focus {
 }
 
 .portfolio-gallery__item:nth-child(4) {
-	background-image: url('../img/item1.jpg');
-}
-
-.portfolio-gallery__item:nth-child(5) {
-	background-image: url('../img/item2.jpg');
-}
-
-.portfolio-gallery__item:nth-child(6) {
-	background-image: url('../img/item3.jpg');
+	background-image: url('../img/item4.jpg');
 }
 
 .contacts_list {
