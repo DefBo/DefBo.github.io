@@ -454,7 +454,7 @@ a:focus {
 	text-align: center;
 }
 
-.portfolio-gallery__item:hover .overlay {
+.portfolio-gallery__item:hover .overlay-new {
 	opacity: 1;
 }
 
