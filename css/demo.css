@@ -201,18 +201,22 @@ a:focus {
 	justify-content: space-between;
 	align-items: center;
 	width: 9em;
-	margin: 1em 0 0 auto;
+	margin: 0 0 0 auto;
 }
 
 .codrops-icon {
 	color: #484545;
 }
 
-.mode--code,
-.menu--code .menu__link {
+.mode--code {
 	font-family: 'Roboto Mono', monospace;
 	text-transform: lowercase;
 	color: #e04643;
+}
+
+.menu--code .menu__link {
+	font-family: 'Roboto Mono', monospace;
+	color: #c0c0c0;
 }
 
 .menu {
@@ -227,20 +231,20 @@ a:focus {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	display: inline-block;
-	width: 200px;
-	vertical-align: top;
+	width: 100%;
 }
 
-.menu__inner__right li {
-	text-align: right;
+.menu__inner-bottom {
+	position: absolute;
+	right:  2.5em;
+	bottom: calc(13em + 5vh);
 }
 
 .menu--code {
 	font-size: 1em;
 	flex: none;
 	width: 100%;
-	margin: 8em 0 2em 0;
+	/* margin: 8em 0 2em 0; */
 	text-align: left;
 }
 
@@ -249,7 +253,11 @@ a:focus {
 }
 
 .menu__item:not(:last-child) {
-	margin: 0 0 0.25em 0;
+	margin: 0 0 0.3em 0;
+}
+
+.menu--code .menu__item:not(:last-child) {
+	margin: 0 0 0.8em 0;
 }
 
 .js .menu--code {
@@ -401,47 +409,82 @@ a:focus {
 }
 
 .portfolio-gallery {
-	width: calc(100% - 208px);
-	display: inline-block;
+	width: 100%;
+	margin-top: 5px;
 	margin-bottom: 10px;
-	font-size: 0;
 	text-align: left;
+	font-size: 0
 }
 
 .portfolio-gallery__item {
 	display: inline-block;
 	font-size: 20px;
-	width:  31.33%;
+	width:  32.33%;
+	margin: 0 1% 1% 0;
 	height:  235px;
-	margin: 0 2% 2% 0;
+	/* margin: 0 2% 2% 0; */
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text {
+	font-family: 'League Spartan';
+	color: white;
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.portfolio-gallery__item:hover .overlay {
+	opacity: 1;
 }
 
 .portfolio-gallery__item:first-child {
-	background-image: url('../img/item2.png');
-}
-
-.portfolio-gallery__item:nth-child(2) {
 	background-image: url('../img/item1.jpg');
 }
 
+.portfolio-gallery__item:nth-child(2) {
+	background-image: url('../img/item2.jpg');
+}
+
 .portfolio-gallery__item:nth-child(3) {
-	background-image: url('../img/item3.png');
+	background-image: url('../img/item3.jpg');
 }
 
 .portfolio-gallery__item:nth-child(4) {
-	background-image: url('../img/item4.png');
+	background-image: url('../img/item4.jpg');
 }
 
 .contacts_list {
 	list-style-type: none;
 	text-align: right;
 	display: none;
-	position: absolute;
-	right: 2.5em;
-	top: 17em;
+	width: 100%;
+	margin-top: 1em;
+}
+
+.contacts_list li i {
+	position: relative;
+	top: 1px;
 }
 
 .contacts_list li {
@@ -457,32 +500,67 @@ a:focus {
 	color: #fff;
 }
 
-@media screen and (max-height: 38.5em) {
-	.menu {
-		text-align: left;
+@media screen and (max-width: 900px) {
+	.portfolio-gallery__item {
+		width: 49%;	
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.contacts_list {
+    	position: absolute;
+    	bottom: calc(8em + 5vh);
+    	right: 2.5em;
+	}
+}
+
+
+
+@media screen and (max-width: 570px) {
+	.portfolio-gallery__item {
+		width: 100%;
+		margin: 0 0 15px 0;
+
 	}
 }
 
 @media screen and (max-width: 40em) {
+	.contacts_list {
+		font-size: 0.85em;
+		right: calc(1em + 2px);
+	}
+
+	.menu__inner {
+		font-size: 0.75em;
+	}
+
+	.menu--code .menu__inner {
+		font-size: 0.75em;
+	}
+
+	.menu__inner-bottom {
+		right: 1em;
+		bottom: calc(11em + 5vh);
+		max-width:  290px;
+	}
+
 	.content__top {
-		font-size: 0.5em;
+		font-size: 1em;
 	}
 	.content__bottom {
 		font-size: 0.85em;
 	}
-	.menu {
-		font-size: 1em;
-	}
+
 	.content__inner {
 		padding: 1em 1em 0;
 	}
 	.title {
-		left: 1em;
+		left: calc(1em + 2px);
 		bottom: calc(6em + 5vh);
 		font-size: 0.85em;
 	}
 	.sub-title {
-		left: 1em;
+		left: calc(1em + 2px);
 		bottom: calc(1em + 5vh);
 		font-size: 0.85em;
 	}

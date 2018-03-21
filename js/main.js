@@ -672,7 +672,7 @@
 				
 			animateLetters(DOM.menuCodeItemLetters, 'in', {
 				delay: function(t,i) {
-					return i*30
+					return i*10
 				},
 				begin: function() {
 					DOM.menu['code'].wrapper.style.display = 'block';
@@ -740,9 +740,9 @@
 		// Menu links:
 		animateLetters(DOM.menuCodeItemLetters, 'out', {
 			delay: function(t,i,c) {
-				return (c-i-1)*10;
+				return (c-i-1)*2;
 			},
-			duration: 20,
+			duration: 10,
 			complete: function() {
 				DOM.menu['code'].wrapper.style.display = 'none';
 				DOM.menu['design'].wrapper.style.display = 'block';
@@ -775,13 +775,12 @@ $('#portfolio').click(function() {
 	$('#pieces').hide('fade');
 	$('#way1').hide('fade');
 	$('#way2').delay(400).show('fade');
-	$('#portfolio').addClass("white");
-	$('.hidden_menu').css({opacity: 0, visibility: "visible"}).animate({opacity: 1.0}, 400);
+	$('.hidden_menu').delay(400).css({opacity: 0, visibility: "visible"}).animate({opacity: 1.0}, 400);
 	$('.portfolio-gallery').delay(400).show('fade');
 	$('.title').hide('fade');
 	$('.sub-title').hide('fade');
-	$('#contacts').removeClass("white");
 	$('.contacts_list').hide('fade');
+	$('#menu__inner').hide('fade');
 });
 
 $('#contacts').click(function() {
@@ -789,30 +788,17 @@ $('#contacts').click(function() {
 	$('#contacts').toggleClass("white");
 });
 
-$('#home_link').click(function() {
-	$('#pieces').show('fade');
+$('#home_link, #gohome').click(function() {
+	$('#pieces').delay(400).show('fade');
 	$('#way2').hide('fade');
 	$('#way1').delay(400).show('fade');
-	$('#portfolio').removeClass("white");
 	$('.hidden_menu').css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 400);
 	$('.portfolio-gallery').hide('fade');
-	$('.title').show('fade');
-	$('.sub-title').show('fade');
-	$('#contacts').removeClass("white");
+	$('.title').delay(400).show('fade');
+	$('.sub-title').delay(400).show('fade');
 	$('.contacts_list').hide('fade');
-});
-
-$('#gohome').click(function() {
-	$('#pieces').show('fade');
-	$('#way2').hide('fade');
-	$('#way1').delay(400).show('fade');
-	$('#portfolio').removeClass("white");
-	$('.hidden_menu').css({opacity: 1.0, visibility: "visible"}).animate({opacity: 0}, 400);
-	$('.portfolio-gallery').hide('fade');
-	$('.title').show('fade');
-	$('.sub-title').show('fade');
+	$('#menu__inner').delay(400).show('fade');
 	$('#contacts').removeClass("white");
-	$('.contacts_list').hide('fade');
 });
 
 $('#about_me').click(function() {

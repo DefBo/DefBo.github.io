@@ -3,16 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Developer/Designer Page Layout Concept | Codrops</title>
-		<meta name="description" content="A page layout concept with a developer/designer theme and a special effect" />
-		<meta name="keywords" content="template, page layout, concept, developer, designer, portfolio, effect, animation, css, javascript" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
+		<title>Front-end web developer - Bogdan Andriiv </title>
+		<meta name="description" content="A personal front-end web developer's web-site of Bogdan Andriiv" />
+		<meta name="keywords" content="portfolio, developer, web, development, front-end, design, personal, html, css, javascript, specialist, Kyiv, Kiev, Ukraine" />
+		<meta name="author" content="Bogdan Andriiv" />
+		<link rel="icon" type="image/png" href="favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/pieces.css" />
-		<link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
 		<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'/>
 		<script>document.documentElement.className = 'js';</script>
 	</head>
@@ -29,7 +28,7 @@
 						<div class="controls">
 							<a target="_blank" href="https://www.facebook.com/bo.andriiv"><i class="fab fa-facebook fa-lg"></i></a>
 							<a target="_blank" href="https://www.instagram.com/majsterbo/"><i class="fab fa-instagram fa-lg"></i></a>
-							<a target="_blank" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+							<a target="_blank" href="https://github.com/DefBo"><i class="fab fa-github fa-lg"></i></a>
 							<button class="btn btn--menu mode mode--design" data-switch style="display: none">
 								<svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
 								<svg class="icon icon--menu-alt"><use xlink:href="#icon-menu-alt"></use></svg>
@@ -44,14 +43,25 @@
 					<div class="menu">
 
 						<div class="portfolio-gallery" style="display: none">
-							  <a class="portfolio-gallery__item"></a>
-							  <a class="portfolio-gallery__item"></a>
-							  <a class="portfolio-gallery__item"></a>
-							  <a class="portfolio-gallery__item"></a>
+							<a href="http://andriiv.com/darico/" target="_blank" class="portfolio-gallery__item">
+								<div class="overlay">
+									<div class="text">Dari Co - swimwear brand</div>
+								</div>
+							</a>
+							<a href="http://andriiv.com/pineapple/" target="_blank" class="portfolio-gallery__item">
+								<div class="overlay">
+									<div class="text">Pineapple Blues - publishing platform</div>
+								</div>
+							</a>
+							<a href="http://andriiv.com/tribetattoo/" target="_blank" class="portfolio-gallery__item">
+								<div class="overlay">
+									<div class="text">Tribe Tatto - tattoo studio</div>
+								</div>
+							</a>
 						</div>
 
-						<ul class="menu__inner">
-							<li class="menu__item"><a class="menu__link" data-switch>Upwork profile</a></li>
+						<ul class="menu__inner" id="menu__inner">
+							<li class="menu__item"><a href="https://www.upwork.com/o/profiles/users/_~01dc13b0ef1044d7cf/" target="_blank" class="menu__link" data-switch>Upwork profile</a></li>
 							<li class="menu__item"><a id="portfolio" class="menu__link" data-switch>Portfolio</a></li>
 							<li class="menu__item"><a id="contacts" class="menu__link" data-switch>Contacts</a></li>
 						</ul>
@@ -60,17 +70,21 @@
 						<li><i class="fas fa-phone fa-lg"></i> <a href="tel:+380980601234">+380 98 060 1234</a></li>
 						<li><i class="fas fa-at fa-lg"></i> <a href="mailto:bo.andriiv@gmail.com">bo.andriiv@gmail.com</a></li>
 						<li><i class="fab fa-skype fa-lg"></i> <a href="skype:buzzydang?chat">Bo Andriiv</a></li>
-						<li><i class="fab fa-telegram-plane fa-lg"></i> <a href="https://telegram.me/boandriiv">@boandriiv</a></li>
+						<li><i class="fab fa-telegram-plane fa-lg"></i> <a href="https://telegram.me/boandriiv" target="_blank">@boandriiv</a></li>
 					</ul>
-					<div class="menu menu--code" style="position: relative">
+					<div class="menu menu--code">
 						<ul class="menu__inner">
-							<li class="menu__item"><a class="menu__link" data-switch>Про мене</a></li>
-							<li class="menu__item"><a class="menu__link" data-switch>Портфоліо</a></li>
+							<li class="menu__item"><a class="menu__link" data-switch><b>Age:</b> 25</a></li>
+							<li class="menu__item"><a class="menu__link" data-switch><b>Experience in the field:</b> 9 month</a></li>
+							<li class="menu__item"><a class="menu__link" data-switch><b>Current location:</b> Ukraine, Kyiv</a></li>
+							<li class="menu__item"><a class="menu__link" data-switch><b>Current availability:</b> available as needed</a></li>
+							<li class="menu__item"><a class="menu__link" data-switch><b>Languages spoken:</b> English, Russian, Polish, Ukrainian</a></li>
 						</ul>
-						<ul class="menu__inner menu__inner__right" style="position: absolute; top: 0; right: 0;">
-							<li class="menu__item"><a class="menu__link" data-switch>Contacts</a></li>
-							<br />
-							<li class="menu__item"><a class="menu__link" data-switch>Портфоліо</a></li>
+						<ul class="menu__inner menu__inner-bottom">
+							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch><b>Technologies I am currently proficient in:</b></a></li>
+							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>HTML5, CSS3, JavaScript, jQuery, Sass, Gulp,</a></li>
+							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Bootstrap (3,4), GIT, Responsive Design, WordPress,</a></li>
+							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Adobe Photoshop & XD, Avocode, Sketch</a></li>
 						</ul>
 					</div>
 					<h2 class="title">
@@ -89,7 +103,7 @@
 						</div>
 
 						<div class="link-wrap">
-							<a class="contact-link mode mode--design" data-switch data-glitch>Work with me</a>
+							<a class="contact-link mode mode--design" href="mailto:bo.andriiv@gmail.com" data-switch data-glitch>Work with me</a>
 						</div>
 					</div>
 				</div><!-- /content__inner-->
