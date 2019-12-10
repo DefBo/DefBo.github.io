@@ -245,7 +245,7 @@ a:focus {
 	flex: none;
 	width: 100%;
 	/* margin: 8em 0 2em 0; */
-	text-align: left;
+	text-align: right;
 }
 
 .menu:not(.menu--code) .menu__item {
