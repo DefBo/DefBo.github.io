@@ -1,178 +1,233 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bogdan Andriiv - Markup & Styles Engineer </title>
-		<meta name="description" content="Front-end Developer's portfolio and overview of Bogdan Andriiv" />
-		<meta name="keywords" content="portfolio, developer, web, development, front-end, design, personal, html, css, javascript, specialist, Kyiv, Kiev, Ukraine" />
-		<meta name="author" content="Bogdan Andriiv" />
-		<link rel="icon" type="image/png" href="favicon.png">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500Roboto+Mono" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/pieces.css" />
-		<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'/>
-		<script>document.documentElement.className = 'js';</script>
-	</head>
-	<body>
-		<main>
-			<div id="pieces" class="pieces" style="background-image: url(img/normal.jpg)" data-img-alt="url(img/alt.jpg)" data-img-code="url(img/code.jpg)"></div>
-			<div class="overlay overlay--hidden"></div>
-			<div class="content">
-				<div class="content__inner" style="position: relative">
-					<div class="content__top">
-						<a href="http://andriiv.com/" id="logo_home" class="logo">
-							<i class="fas fa-chevron-left"></i>Andrii<span>v</span><i class="fas fa-chevron-right"></i>
-						</a>
-						<div class="controls">
-							<a target="_blank" href="https://www.facebook.com/bo.andriiv"><i class="fab fa-facebook fa-lg"></i></a>
-							<!--<a target="_blank" href="https://www.instagram.com/majsterbo/"><i class="fab fa-instagram fa-lg"></i></a>-->
-							<a target="_blank" href="https://github.com/DefBo"><i class="fab fa-github fa-lg"></i></a>
-							<a target="_blank" href="https://telegram.me/boandriiv"><i class="fab fa-telegram fa-lg"></i></a>
-							<button class="btn btn--menu mode mode--design" data-switch style="display: none">
-								<svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
-								<svg class="icon icon--menu-alt"><use xlink:href="#icon-menu-alt"></use></svg>
-							</button>
-						</div>
-					</div>
-					<div class="hidden_menu">
-						<ul class="menu__inner">
-							<li class="menu__item"><a id="gohome" class="menu__link" data-switch>back home</a></li>
-						</ul>
-					</div>
-					<div class="menu">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
 
-						<div class="portfolio-gallery" style="display: none">
-							<a href="http://andriiv.com/darico/" class="portfolio-gallery__item">
-								<div class="overlay-new">
-									<div class="text">Dari Co - swimwear brand</div>
-								</div>
-							</a>
-							<a href="http://andriiv.com/tribetattoo/" class="portfolio-gallery__item">
-								<div class="overlay-new">
-									<div class="text">Tribe Tatto - tattoo studio</div>
-								</div>
-							</a>
-							<a href="http://andriiv.com/norbknitwear/" class="portfolio-gallery__item">
-								<div class="overlay-new">
-									<div class="text">Matilda Norberg - fashion knitwear</div>
-								</div>
-							</a>
-							<a href="http://andriiv.com/convert/" class="portfolio-gallery__item">
-								<div class="overlay-new">
-									<div class="text">Converrt - Saas platfrom for affiliate marketers</div>
-								</div>
-							</a>
-							<a href="http://andriiv.com/3digital/" class="portfolio-gallery__item">
-								<div class="overlay-new">
-									<div class="text">3Digital - marketing agency</div>
-								</div>
-							</a>
-							<a href="http://andriiv.com/airtable/" class="portfolio-gallery__item">
-								<div class="overlay-new">
-									<div class="text">A clone of AirTable page</div>
-								</div>
-							</a>
-							<a href="https://moversinlongbeach.com/" class="portfolio-gallery__item">
-								<div class="overlay-new">
-									<div class="text">Movers in Long Beach - moving company</div>
-								</div>
-							</a>
-						</div>
+	<title>Dari Co Swimwear</title>
+	<meta name="description" content="The Ukrainian swimwear brand. (Sample)">
+	<meta name="keywords" content="template, page layout, concept, developer, designer, portfolio, effect, animation, css, javascript">
 
-						<ul class="menu__inner" id="menu__inner">
-							<li class="menu__item"><a href="https://www.upwork.com/o/profiles/users/_~01dc13b0ef1044d7cf/" target="_blank" class="menu__link" data-switch>Upwork profile</a></li>
-							<!--<li class="menu__item"><a id="portfolio" class="menu__link" data-switch>Portfolio</a></li>-->
-							<li class="menu__item"><a href="https://www.linkedin.com/in/boandriiv/" class="menu__link" data-switch>LinkedIn</a></li>
-							<li class="menu__item"><a href="http://andriiv.com/cv/" class="menu__link" data-switch>Resume</a></li>
-							<!--<li class="menu__item"><a id="contacts" class="menu__link" data-switch>Contacts</a></li>-->
-						</ul>
-					</div>
-					<ul class="contacts_list">
-						<li><a href="tel:+380980601234">+380 98 060 1234</a></li>
-						<li><a href="mailto:bo.andriiv@gmail.com">bo.andriiv@gmail.com</a></li>
-						<!--<li><i class="fab fa-skype fa-lg"></i> <a href="skype:buzzydang?chat">Bo Andriiv</a></li>-->
-						<li><a href="https://telegram.me/boandriiv" target="_blank">@boandriiv</a></li>
-					</ul>
-					<div class="menu menu--code">
-						<ul class="menu__inner">
-							<li class="menu__item"><a class="menu__link" data-switch><strong>Mark-up & Styles Engineer</strong></a></li>
-							<li class="menu__item"><a class="menu__link" data-switch><strong>UI/UX Developer</strong></a></li>
-							<li class="menu__item"><a class="menu__link" data-switch><strong>CSS Team Leader</strong></a></li>
-							<br>
-							<li class="menu__item"><a class="menu__link" data-switch><b>Location:</b> Ukraine, Kyiv</a></li>
-							<li class="menu__item"><a class="menu__link" data-switch><b>Availability:</b> 20-30 hours per week</a></li>
-							<li class="menu__item"><a class="menu__link" data-switch><b>Languages:</b> English, Russian, Polish, Ukrainian</a></li>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
 
-						</ul>
-						<!--<ul class="menu__inner menu__inner-bottom">
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch><b>Technologies Stack:</b></a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>HTML5, CSS 3, Javascript</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>SASS, Less, Stylus</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Version Control System</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Gulp, Webpack</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Responsive layouts, Bootstrap 3/4</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Pixel perfect development</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>CSS-animations</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Cross-browser compatibility</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>CSS-methodologies: BEM, atomic, OOCSS</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Photoshop, Avocode, Sketch, inVision, Adobe XD, Figma, Zeplin</a></li>
-							<li class="menu__item" style="text-align: right"><a class="menu__link" data-switch>Web Accessibillity, Markup Semantic Understanding</a></li>
-						</ul>-->
-					</div>
-					<h2 class="title">
-						<span class="title__inner mode mode--design" data-switch data-glitch>Bogdan Andriiv</span>
-					</h2>
-					<h2 class="sub-title">​<span class="part1">Front-end developer</span><br><span class="part2">you were looking for</span></h2>
-					<div class="content__bottom">
-						<div id="way1" class="switch mode mode--design">
-							<a id="home1" class="switch__item switch__item--current">home</a>
-							<a class="switch__item" id="about_me"><span class="mode mode--design" data-switch data-glitch>about</span></a>
-						</div>
+	<div id="page-preloader" class="preloader">
+		<div class="sk-circle">
+		    <div class="sk-circle1 sk-child"></div>
+		    <div class="sk-circle2 sk-child"></div>
+		    <div class="sk-circle3 sk-child"></div>
+		    <div class="sk-circle4 sk-child"></div>
+		    <div class="sk-circle5 sk-child"></div>
+		    <div class="sk-circle6 sk-child"></div>
+		    <div class="sk-circle7 sk-child"></div>
+		    <div class="sk-circle8 sk-child"></div>
+		    <div class="sk-circle9 sk-child"></div>
+		    <div class="sk-circle10 sk-child"></div>
+		    <div class="sk-circle11 sk-child"></div>
+		    <div class="sk-circle12 sk-child"></div>
+		 </div>
+	</div>
+	
+	<a href="http://andriiv.com/" class="button-andriiv">
+		<span>back to</span>
+		<div class="logo-andriiv">
+			<i class="fas fa-chevron-left"></i>Andrii<span>v</span><i class="fas fa-chevron-right"></i>
+		</div>
+	</a>
 
-						<div id="way2" class="switch" style="display: none;">
-							<a id="home_link" class="switch__item"><span class="mode mode--design" data-switch data-glitch>home</span></a>
-							<a class="switch__item switch__item--current">portfolio</a>
-						</div>
+	<header class="header">
+		<div class="container">
+			<div id="top-line" class="top-line">
+				<a href="#" class="top-line__logo">
+					<img src="images/logo.png" alt="Logo" class="top-line__logopic">
+				</a>
+				<nav class="top-line__navbar">
+					<a href="#" class="top-line__navitem">Home</a>
+					<a href="#" class="top-line__navitem">Collections</a>
+					<a href="#" class="top-line__navitem">Delivery</a>
+					<a href="#" class="top-line__navitem">Contacts</a>
+				</nav>
+				<div class="top-line__social">
+					<a href="#" class="top-line__fb">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="#" class="top-line__insta">
+						<i class="fab fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<h5 id="subtitle" class="header-subtitle">Smart. Sexy. In love</h5>
+		<a href="#" class="collection-title"><span>Collection 2017</span></a>
+	</header>
 
-						<div class="link-wrap">
-							<a class="contact-link mode mode--design" href="mailto:bo.andriiv@gmail.com" data-switch data-glitch>Send a proposal</a>
-						</div>
-					</div>
-				</div><!-- /content__inner-->
-			</div><!-- /content -->
-			<div class="loading"></div>
-		</main>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/anime.min.js"></script>
-		<script src="js/charming.min.js"></script>
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
-		<script src="js/main.js"></script>
-		<script>
-			// Get height of document
-			function getDocHeight(doc) {
-			    doc = doc || document;
-			    // from http://stackoverflow.com/questions/1145850/get-height-of-entire-document-with-javascript
-			    var body = doc.body, html = doc.documentElement;
-			    var height = Math.max( body.scrollHeight, body.offsetHeight, 
-				html.clientHeight, html.scrollHeight, html.offsetHeight );
-			    return height;
-			}
+	<section class="about-section">
+		<h2 class="section-header">About us</h2>
+		<div class="container-narrow">
+			<div class="about-2010">
+				<img src="images/about-1.jpg" alt="" class="about-2010__pic">
+				<div class="about-2010__description">
+					<h3 class="about-2010__title">Dari co swimwear</h3>
+					<p class="about-2010__text">The Ukrainian swimsuits brand DARI CO tends to the streetwear style at the intersection of glamour and minimalism. Stylish, bright and monochrome swimsuits are the main flair of the brand which has three components in its DNA: intellectuality, sexuality and love.</p>
+				</div>
+			</div>
+			<div class="about-2018">
+				<div class="about-2018__description">
+					<h3 class="about-2018__title">Dari co swimwear</h3>
+					<p class="about-2010__text">The assortment includes both one-piece models with an open back, and two piece bikini with sexy cutouts. You can choose exquisite merged swimsuit, maillot model, open bikini, sports minimalistic swimsuit  and sexy monokini.</p>
+				</div>
+				<img src="images/about-2.jpg" alt="" class="about-2018__pic">
+			</div>
+		</div>
+	</section>
 
-			// send docHeight onload
-			function sendDocHeightMsg(e) {
-			    var ht = getDocHeight();
-			    parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
-			}
+	<section class="advantages">
+		<h2 class="section-header">Advantages</h2>
+		<div class="container-narrow clearfix">
+			<img src="images/advantages-dec.jpg" alt="" class="advantages__decorative-square-1">
+			<p class="advantages__text">Our swimsuits are made of quality materials that promote comfortable wearing.</p>
+			<img src="images/advantages-1.jpg" alt="" class="advantages__pic">
+			<a href="#" class="advantages__link">All sweamwear</a>
+			<figure class="advantages__decorativeline"></figure>
+		</div>
+		<div class="container">
+			<div class="advantages__gallery">
+				<a href="#" class="advantages__gallery-item">
+					<img src="images/advantages-2.jpg" alt="">
+				</a>
+				<a href="#" class="advantages__gallery-item">
+					<img src="images/advantages-3.jpg" alt="">
+				</a>
+				<a href="#" class="advantages__gallery-item">
+					<img src="images/advantages-4.jpg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="container-narrow">
+			<img src="images/advantages-dec.jpg" alt="" class="advantages__decorative-square-2">
+			<a href="#" class="advantages__link link2">Consultation</a>
+			<p class="advantages__text text2">We are always ready to answer all questions that you are interested in, help in choosing, and consult online.</p>
+			<img src="images/advantages-5.jpg" alt="" class="advantages__pic-2">
+			<figure class="advantages__decorativeline line2"></figure>
+		</div>
+	</section>
 
-			// assign onload handler 
-			if ( window.addEventListener ) {
-			    window.addEventListener('load', sendDocHeightMsg, false);
-			} else if ( window.attachEvent ) { // ie8
-			    window.attachEvent('onload', sendDocHeightMsg);
-			}
-		</script>
-	</body>
+	<section class="instagram">
+		<h2 class="section-header">Instagram</h2>
+		<div class="container tablet-container">
+			<div class="instagram__gallery">
+				<a href="#" class="instagram__gallery-item inst_item1">
+					<img src="images/instagram-1.jpg" alt="">
+				</a>
+				<a href="#" class="instagram__gallery-item inst_item2">
+					<img src="images/instagram-2.png" alt="">
+				</a>
+				<a href="#" class="instagram__gallery-item inst_item3">
+					<img src="images/instagram-3.jpg" alt="">
+				</a>
+				<a href="#" class="instagram__gallery-item inst_item4">
+					<img src="images/instagram-4.jpg" alt="">
+				</a>
+				<a href="#" class="instagram__gallery-item inst_item5">
+					<img src="images/instagram-5.jpg" alt="">
+				</a>
+				<a href="#" class="instagram__gallery-item inst_item6">
+					<img src="images/instagram-6.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="discounts">
+		<h2 class="section-header">Discounts</h2>
+		<div class="container">
+			<p class="discounts__description">In our store there is a system of cumulative discounts. You can get a discount  from 5% to 20%.</p>
+			<img src="images/discounts.jpg" alt="" class="discounts__pic">
+			<p class="discounts__description">You automatically receive a 10% discount for the entire range of our store on your birthday.</p>
+		</div>
+	</section>
+
+	<section class="online-shop">
+		<h2 class="section-header">Online-shop</h2>
+		<div class="container">
+			<div class="online-shop__item">
+				<a href="#"><img src="images/shop-1.jpg" alt="" class="online-shop__pic"></a>
+				<p class="online-shop__title"><a href="#">Dark black darico sweamwear</a></p>
+				<p class="online-shop__price">100$</p>
+			</div>
+			<div class="online-shop__item">
+				<a href="#"><img src="images/shop-2.jpg" alt="" class="online-shop__pic"></a>
+				<p class="online-shop__title"><a href="#">Solid darico sweamwear</a></p>
+				<p class="online-shop__price">145$</p>
+			</div>
+			<div class="online-shop__item">
+				<a href="#"><img src="images/shop-3.jpg" alt="" class="online-shop__pic"></a>
+				<p class="online-shop__title"><a href="#">Black darico sweamwear</a></p>
+				<p class="online-shop__price">120$</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<h2 class="section-header">Contacts</h2>
+		<div class="container">
+			<p class="contacts__description"><i class="far fa-paper-plane fa-lg"></i> <a href="mailto:darikorol@gmail.com">darikorol@gmail.com</a></p>
+			<img src="images/contacts.jpg" alt="" class="contacts__pic">
+			<p class="contacts__description"><i class="fas fa-phone-volume fa-lg"></i> <a href="tel:+380936133518">+38 093 613 35 18</a></p>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<a href="#" class="footer__logo">
+					<img src="images/logo-white.png" alt="Logo" class="footer__logopic">
+				</a>
+				<nav class="footer__navbar">
+					<a href="#" class="footer__navitem">Home</a>
+					<a href="#" class="footer__navitem">Collections</a>
+					<a href="#" class="footer__navitem">Delivery</a>
+					<a href="#" class="footer__navitem">Contacts</a>
+				</nav>
+				<div class="footer__social">
+					<a href="#" class="footer__fb">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="#" class="footer__insta">
+						<i class="fab fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		// Preloader function
+		document.body.onload = function() {
+			setTimeout(function() {
+				var preloader = document.getElementById('page-preloader');
+				if( !preloader.classList.contains('done') )
+				{
+					preloader.classList.add('done');
+				}
+			}, 1000);
+		};
+
+		$( window ).on( "load", function() {
+			$("#subtitle").addClass("start-animation"); 
+		});
+
+	</script>
+	
+</body>
 </html>
