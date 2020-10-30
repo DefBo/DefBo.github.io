@@ -509,11 +509,6 @@ ul {
     opacity: 1;
     visibility: visible;
   }
-  ._show-nav .aside .aside-btn i {
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-  }
   .aside .h2,
   .aside .text {
     opacity: 0;
